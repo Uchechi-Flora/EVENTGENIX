@@ -1,0 +1,226 @@
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIRTHDAY</title>
+<link rel="icon" href="../IMAGES/event_logo.png" type="image/x-icon">
+<script type = "text/javascript" src = "../JQUERY STUFF/jquery.min.js"></script>
+<script src="../JQUERY STUFF/jquery-ui/jquery-ui.js"></script>
+<link href="../JQUERY STUFF/jquery-ui/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/fa158748e7.js" crossorigin="anonymous"></script>
+<style>
+   
+    .logo{
+        width:100px;
+    }
+    .title{
+        text-align: center;
+        font-weight: 500;
+        font-family: 'Garamond';
+        letter-spacing: 0.3em;
+    }
+    .jumbotron{
+        background-color: transparent;
+        border:solid rgba(255, 49, 49, 0.5);;
+    }
+    ul{
+        list-style: none;
+    }
+    .pic-btn{
+        margin-top: 20px;
+        justify-content: space-evenly;
+        padding:5px;
+        background-color: transparent;
+        border:1px solid rgba(255, 49, 49, 0.5);;
+        width:175px;
+    }
+    .food-menu{
+        /*border:1px solid black; */
+        margin: 10px 0px; 
+        padding:5px; 
+        width:650px; 
+        text-align: center;
+    }
+   
+    .wed-form{
+    padding:10px;
+}
+label, .plan{
+    font-weight: 600;
+    font-family: 'Ebrima';
+    font-size: 15px;
+}
+input{
+    width: 155px;
+    margin-top: 10px;
+}
+.mybuttons{
+    justify-content: space-between;
+}
+.form-btn{
+    background-color: transparent;
+    width:200px;
+    border-radius: 27px;
+    border:2px solid rgba(255, 49, 49, 0.5);;
+    padding:5px;
+}
+#cancelbtn{
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+#cancelbtn:hover{
+    border:2px solid red;
+}
+
+#paymentbtn{
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+#paymentbtn:hover{
+    border:2px solid green;
+}
+  
+</style>
+
+</head>
+
+<body>
+
+<!--WEDDING PAGE margin:250px 550px-->
+
+<nav>
+   <a href="./EG.html"><img src="../IMAGES/event_logo.png" class="logo"></a>
+</nav>
+
+<div class="jumbotron">
+    <h2 class="title">BIRTHDAY EVENT  BOOKING</h2>
+    <hr class="my-4">
+    <p class="lead">Fill out the form and get your receipt to book your birthday event. Please note these:</p>
+    <ul class="text-muted">
+        <li><i class="fa-sharp fa-solid fa-triangle-exclamation"></i> We do not offer buffet service, you can view our menu below.</li>
+        <li><i class="fa-sharp fa-solid fa-triangle-exclamation"></i> Quantity of food will be determined by number of seats chosen.</li>
+        <li><i class="fa-sharp fa-solid fa-triangle-exclamation"></i> Book two days before the event.</li>
+        <li><i class="fa-sharp fa-solid fa-triangle-exclamation"></i> If you choose <u>"Strictly by Invitation"</u>, download your card entrance.</li>
+    </ul>
+    <!--<hr class="my-4"  style="border:1px solid black; margin: 10px; padding:20px; width:600px; text-align: center;">-->
+    </div>
+
+<div style="display:inline-flex; border: 1px solid rgba(255, 49, 49, 0.5);; margin-left:200px; margin-bottom: 30px;">
+
+
+    <div class="food-menu">
+        <div style="margin-left:10px; margin-top: 5px;">
+        <h3 style="font-weight: 400;"> EVENTGENIX MENU</h3>
+       <!-- <a class="btn btn-warning btn-lg" href="#" role="button" >View menu</a> -->
+        </div>
+            <div style="margin-top: 20px;">
+                <img src="../IMAGES/complete_menu.png" width="200px" height="300px"class="img-view">
+            </div>
+                 <div class="ctrbtn" style="display: block;">
+                    <button class="pic-btn" id="zoom-in" onclick="zoomIn()">ZOOM IN</button>
+                    <button class="pic-btn" id="zoom-out">ZOOM OUT</button>
+                </div> 
+    </div>
+
+
+    <div class="form-box" style="padding: 20px; border: 1px solid rgba(255, 49, 49, 0.5);;">
+        <h3 style="font-weight:400; text-align: center;">BIRTHDAY BOOKING FORM</h3>
+        <h6 class="empty-details"style="color:red; font-size:12px; text-align:center; display:none">PLEASE FILL ALL DETAILS</h6>
+        <form class="wed-form">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" class="range">
+            <br>
+            <label for="email">EMAIL:</label>
+            <input type="text" id="email" class="range">
+            <br>
+    
+            <label for="date" >DATE:</label>
+            <input type="text" id="date" class="range" style="margin-left: 10px;">
+
+            <label for="date">TIME:</label>
+            <input type="time" id="time" class="range" style="margin-left: 10px;">
+            
+    
+            <label for="seat" style="margin-left: 59px;">SEAT:</label>
+            <select name="seat" class="range">
+                <option label=""></option>
+                <option value="range1">0 - 500</option>
+                <option value="range2">0 - 1000</option>
+            </select>
+            <br>
+    
+            <label for="seat" style="margin-top: 9px;">FOOD:</label>
+            <select name="food" class="range">
+                <option label=""></option>
+                <option value="range1">My Caterers</option>
+                <option value="range2">EVENTGENIX Menu</option>
+            </select>
+            
+    
+            <label for="music" style="margin-top: 9px; margin-left: 30px;">MUSIC:</label>
+            <select name="music" class="range">
+                <option label=""></option>
+                <option value="range1">My DJ</option>
+                <option value="range2">EVENTGENIX DJ</option>
+            </select>
+            <br>
+    
+            <label for="photo" style="margin-top: 9px;">PHOTOGRAPHY:</label>
+            <select name="music" class="range" style="margin-right: 60px;">
+                <option label=""></option>
+                <option value="range1">My Photographer</option>
+                <option value="range2">EVENTGENIX Photographer</option>
+            </select>
+    
+            <p class="plan" style="margin-top: 9px; text-align: center;">Are on a STRICTLY BY INVITATION PLAN?</p>
+            <label for="myplan" id="yes" style="margin-left: 150px;">YES:</label>
+            <input type="radio" value="Yes" name="invite" id="yes">
+            <label for="myplan">NO:</label>
+            <input type="radio" value="No" name="invite">
+            <h6 class="warn-plan"style="color:rgb(255, 153, 0); font-size:12px; text-align:center;">DOWNLOAD YOUR CARD ENTRANCE AFTER PAYMENT, IF YOU WANT STRICTLY BY INVITATION</h6>
+           
+        </form>
+    
+        <div class="mybuttons"  style="display: flex;">
+            <button class="form-btn" id="cancelbtn">CANCEL</button>
+            <a href="#" class="payment-page"><button class="form-btn" id="paymentbtn"><!--ADD ARROW ICON-->CONTINUE TO PAYMENT</button></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+<!--FORM BOX  check border; put image border and form border not general border-->
+    <script type="text/javascript">
+        
+        //FUNCTION FOR EMPTY DETAILS; DONE ON THIS PAGE BECAUSE IT IS PECULIIAR TO THIS PAGE
+        /*
+$("#paymentbtn").click(function() {
+    if($(".range").val() == "" && $('input[name="invite"]').prop('checked', false)){
+        $(".empty-details").show()
+    }
+    else {
+        $('a[href^="#"]').each(function(){
+            let oldU = $(".payment-page").attr("href")
+            let newU = oldU.replace("#","./EG_payment.html")
+            $(this).attr("href", newU)
+        })
+        
+    }
+})*/
+    </script>
+
+    <script type="text/javascript" src="./EG.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+</body>
+</html>

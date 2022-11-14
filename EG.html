@@ -1,0 +1,235 @@
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVENTGENIX</title>
+<link rel="icon" href="../IMAGES/event_logo.png" type="image/x-icon">
+<link rel="stylesheet" href="./EG.css">
+<script type = "text/javascript" src = "../JQUERY STUFF/jquery.min.js"></script>
+<script src="../JQUERY STUFF/jquery-ui/jquery-ui.js"></script>
+<link href="../JQUERY STUFF/jquery-ui/jquery-ui.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fa158748e7.js" crossorigin="anonymous"></script>
+<style>
+    .main{
+        margin-top: 100px;
+    }
+    h2::first-letter{
+        color:orange;
+        font-weight: 900;
+        font-size: 100px;
+        font-family:'Garamond';
+    }
+    p{
+        font-size: 20px;
+    }
+    /*
+    form{
+        margin:0px 90px;
+    } */
+   
+    form > textarea{
+        margin: 20px 55px;
+    }
+    input{
+        width:300px;
+        height: 50px;
+    }
+    input:hover{
+        border:2px solid orange;
+    }
+    textarea:hover{
+        border:2px solid orange;
+    }
+    .buttons{
+        margin: 0px 55px;
+        justify-content: space-between;
+    }
+    .feedbackbtn{
+        width:150px;
+        padding:7px;
+        background-color: transparent;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    .feedbackbtn:hover{
+        border:2px solid orange;
+        color: rgb(172, 115, 2)
+    }
+   #clearbtn:hover{
+    border: 2px solid red;
+    color: red;
+   }
+</style>
+</head>
+
+<body>
+    <nav>
+<img src="../IMAGES/event_logo.png" width="90px">
+<a href="#" class="menu">HOME</a>
+<a href="#services" class="menu">SERVICES</a>
+<a href="#" class="menu">GALLERY</a>
+<a href="#" class="menu">CONTACT US</a>
+</nav>
+
+<main class="main">
+
+<div style="margin-left: 550px;">
+<!--<img src="../IMAGES/event_logo.png" width="600px" style="top:-0px; position: relative;"> -->
+<video autoplay muted loop plays-inline id="video">
+    <source src="../IMAGES/event_video.mp4" type="video/mp4">
+</video> 
+</div>
+
+<div style="margin-left: 150px;">
+<div id="home">
+    <h2>HOME</h2>
+    <p>EVENTGENIX is a center you can use for you weddings, parties, conferences, etc. Sed Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate v</p>
+</div>
+
+<div id="services">
+    <h2>SERVICES</h2>
+    <div class="frame1" style="display:inline-flex;">
+        <div class="box" style="margin: 0px 200px">
+            <a href="./EG_wedding.html" class="menu">WEDDING EVENTS</a>
+            <p>Enjoy your day in our exclusive wedding hall suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure repitationem ullam corporis suscipit laboriosam,piciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        </div>
+
+        <div class="box">
+           <a href="./EG_birthday.html" class="menu">BIRTHDAY EVENTS</a>
+            <p>Enjoy your day in our exclusive wedding hall suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure repitationem ullam corporis suscipit laboriosam,piciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        </div>
+    </div>
+
+    <div class="frame2" style="display:inline-flex; margin:35px 200px ;">
+        <div class="box">
+            <a href="#" class="menu">CONFERENCES</a>
+            <p>Enjoy your day in our exclusive wedding hall suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure repitationem ullam corporis suscipit laboriosam,piciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        </div>
+    
+        <div class="box" style="margin-left: 202px;">
+            <a href="#" class="menu">SEMINAR</a>
+            <p>Enjoy your day in our exclusive wedding hall suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure repitationem ullam corporis suscipit laboriosam,piciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        </div>
+</div>
+
+<!--FEEDBACK PAGE-->
+<div>
+    <h2>LEAVE A FEEDBACK</h2>
+    <div class="feedback" style="display: inline-flex;">
+        <form style="border: 1px solid orange; height:342px; padding: 30px;">
+        <label for="name">NAME:</label>
+        <input type="text" class="name">
+        <label for="name" style="margin-left: 10px;">EMAIL:</label>
+        <input type="text" class="name">
+        <br>
+        <textarea rows="10" cols="89" class="message">MESSAGE</textarea>
+        <div class="buttons" style="display: flex;">
+            <button type="button"class="feedbackbtn" id="sendbtn">SEND MESSAGE</button>
+            <button type="button"class="feedbackbtn" id="clearbtn">CLEAR</button>
+        </div>
+    </form>
+   
+
+    <div class="contact">
+        <div class="email" style="border:1px solid orange; padding: 10px;">
+           <i class="fa-solid fa-envelope"></i>
+           <h3>EMAIL</h3>
+            <h4>floranwokocha05@gmail.com</h4>
+        </div>
+       
+        <div class="location" style="border:1px solid orange; width:500px; padding: 10px;">
+            <i class="fa-solid fa-house-chimney"></i>
+           <h3>LOCATION</h3> 
+           <h4>No 3456 Somwhere Street Rivers, Nigeria</h4>
+        </div>
+       
+        <div class="phone" style="border:1px solid orange; padding: 10px;height:104px;">
+            <i class="fa-solid fa-phone"></i>
+                <h3>PHONE</h3>
+            <h4>00112233445</h4>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!--TESTIMONIES PAGE-->
+<h2>TESTIMONIES</h2>
+<div style="display:flex; justify-content: space-around;">
+<article class="profile">
+    <div class="profile-image">
+        <img src="../IMAGES/IMG-20210120-WA0018.jpg">
+    </div>
+
+<h3 class="profile-username">FLORA ZONE</h3>
+<small>WEDDING EVENT</small>
+<p class="profile-text">Sed Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p>
+</article>
+
+<article class="profile">
+    <div class="profile-image">
+        <img src="../IMAGES/IMG_20181122_161330_907.jpg">
+    </div>
+
+<h3 class="profile-username">FLORA ZONE</h3>
+<small>BIRTHDAY EVENT</small>
+<p class="profile-text">Sed Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p>
+</article>
+
+<article class="profile">
+    <div class="profile-image">
+        <img src="../IMAGES/IMG-20210519-WA0013.jpg">
+    </div>
+
+<h3 class="profile-username">FLORA ZONE</h3>
+<small>CONFERENCE</small>
+<p class="profile-text">Sed Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p>
+</article>
+
+<article class="profile">
+    <div class="profile-image">
+        <img src="../IMAGES/IMG_20200101_100248_080.jpg">
+    </div>
+
+<h3 class="profile-username">FLORA ZONE</h3>
+<small>SEMINAR EVENT</small>
+<p class="profile-text">Sed Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p>
+</article>
+</div>
+
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <ul class="icons">
+            <li><a href="https://github.com/Uchechi-Flora"><i class="fa-brands fa-2x fa-github" style="color: white;" ></i></a></li>
+            <li><a href="https://www.linkedin.com/in/nwokocha-flora-936a4b21b"><i class="fa-brands fa-2x fa-linkedin" style="color: white;"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-2x fa-twitter" style="color: white;"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-2x fa-envelope" style="color: white;"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+    <script type="text/javascript" src="./EG.js"></script>
+</body>
+</html>
